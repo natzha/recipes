@@ -57,7 +57,7 @@ body {
 
 /* Files column (TOC) */
 #files.column {
-    width: 300px; /* Fixed width for TOC */
+    /* width: 300px; Fixed width for TOC */
     flex-shrink: 0; /* Prevents the TOC column from shrinking */
     position: absolute; /* Overlay on top */
     left: 0;

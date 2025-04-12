@@ -20,11 +20,11 @@ deploy:
 .PHONY: build
 build:
 	rm -rf submodule/Recipes
+	rm -rf dist/
 	npm install
 	git submodule update --init --recursive
 	npm run build
 
 dev:
 	npm install
-	git submodule update --init --recursive
 	npm run dev
