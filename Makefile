@@ -3,7 +3,7 @@ deploy:
 	rm -rf submodules/Recipes
 	rm -rf dist/
 	npm install
-	git submodule update --init --recursive
+	git submodule update --init --recursive --remote
 	npm run build
 	git checkout gh-pages
 	rm -rf .dist/
@@ -21,10 +21,10 @@ deploy:
 build:
 	rm -rf submodule/Recipes
 	npm install
-	git submodule update --init --recursive
+	git submodule update --init --recursive --remote
 	npm run build
 
 dev:
 	npm install
-	git submodule update --init --recursive
+	git submodule update --init --recursive --remote
 	npm run dev
